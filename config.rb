@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-set :build_dir, 'docs'
+#set :build_dir, 'docs'
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
