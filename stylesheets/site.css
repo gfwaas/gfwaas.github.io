@@ -1,15 +1,151 @@
+.hidden {
+  display: none; }
+
+input[type='email'] {
+  border-radius: 0; }
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center; }
-
-a {
-  color: rgba(0, 0, 0, 0.7); }
-  a:focus, a:hover {
-    color: rgba(0, 0, 0, 0.6); }
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem; }
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif; }
+  body .application input, body .application button {
+    border: 1px solid #000;
+    padding: 10px;
+    background: transparent; }
+    @media (max-width: 767.98px) {
+      body .application input, body .application button {
+        padding: 5px; } }
+  @media (max-width: 767.98px) {
+    body .application input {
+      width: 190px; } }
+  body .application button {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #000;
+    color: #fff; }
+  body header {
+    text-align: center;
+    background-image: url("/images/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin: 0 0 60px;
+    position: relative; }
+    @media (max-width: 767.98px) {
+      body header {
+        padding: 20px 0;
+        margin: 0 0 30px; } }
+    body header h1 {
+      font-weight: bold;
+      font-size: 4.2rem; }
+      @media (max-width: 767.98px) {
+        body header h1 {
+          font-size: 2.5rem; } }
+    body header #introduction {
+      font-size: 2rem;
+      margin: 20px auto 50px; }
+      @media (max-width: 767.98px) {
+        body header #introduction {
+          font-size: 1.3rem;
+          margin-bottom: 30px; } }
+    body header .credit {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      color: #656565; }
+      @media (max-width: 767.98px) {
+        body header .credit {
+          position: initial;
+          color: #b0b0b0;
+          margin-top: 20px;
+          font-size: 0.9rem; } }
+      body header .credit a {
+        color: inherit; }
+  body #sections {
+    text-align: center; }
+    body #sections section {
+      margin: 0 0 60px;
+      padding: 0 0 60px;
+      border-bottom: 1px solid #ccc; }
+      body #sections section.why h2 {
+        margin: 0 0 45px; }
+      body #sections section.why i {
+        margin: 15px 15px 0 0;
+        font-size: 1.5rem; }
+        body #sections section.why i:last-child {
+          margin-right: 0; }
+      body #sections section.what img {
+        -webkit-box-shadow: 1px 1px 6px #aaa;
+                box-shadow: 1px 1px 6px #aaa;
+        margin: 0 0 15px; }
+      body #sections section.last-child {
+        margin: 0;
+        padding: 0;
+        border-bottom: none; }
+      @media (max-width: 767.98px) {
+        body #sections section {
+          margin: 0 0 24px;
+          padding: 0 0 24px; } }
+    body #sections h2 {
+      font-size: 1.8rem;
+      margin: 0 0 60px; }
+      @media (max-width: 767.98px) {
+        body #sections h2 {
+          font-size: 1.6rem;
+          margin-bottom: 30px; } }
+      body #sections h2 .subtitle {
+        display: block;
+        margin: 0 0 10px; }
+      body #sections h2 .title {
+        font-size: 1.3rem;
+        color: #888; }
+        @media (max-width: 767.98px) {
+          body #sections h2 .title {
+            font-size: 1.2rem; } }
+    body #sections h3 {
+      font-size: 1rem;
+      margin: 0 0 20px; }
+      @media (max-width: 767.98px) {
+        body #sections h3 {
+          margin-bottom: 10px; } }
+    @media (max-width: 767.98px) {
+      body #sections .feature {
+        margin-bottom: 30px; }
+        body #sections .feature.last-child {
+          margin-bottom: 0; } }
+    body #sections .pricing table {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.2rem; }
+    body #sections .pricing i {
+      display: block;
+      margin-bottom: 10px; }
+    body #sections .pricing h3 {
+      margin: 0; }
+      body #sections .pricing h3 .price {
+        font-size: 2rem; }
+    body #sections .pricing td {
+      vertical-align: middle;
+      padding: 15px; }
+  body footer {
+    margin: 60px 0 0;
+    padding: 60px 0;
+    background: #eee; }
+    @media (max-width: 767.98px) {
+      body footer {
+        margin: 20px 0 0;
+        padding: 20px 0; } }
+    body footer img {
+      display: inline-block;
+      margin: 0 20px 0 0px;
+      float: left; }
+      @media (max-width: 767.98px) {
+        body footer img {
+          margin: 0 10px 0 0;
+          width: 100px; } }
+    body footer .copyright {
+      color: #888; }
+      @media (max-width: 767.98px) {
+        body footer .copyright {
+          font-size: 0.9rem; } }
+    body footer .application {
+      float: right; }
