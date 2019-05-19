@@ -6,3 +6,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'mini_racer'
 gem 'middleman-gh-pages'
+gem 'slim'
+#gem 'bootstrap', '~> 4.3.1'

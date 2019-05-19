@@ -1,24 +1,250 @@
+$breakpoint_xs: 575.98px;
+$breakpoint_sm: 767.98px;
+$breakpoint_md: 991.98px;
+$breakpoint_lg: 1199.98px;
+$body-gutter: 60px;
+
+.hidden {
+  display: none;
+}
+
+input[type='email'] {
+  border-radius: 0;
+}
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
 
-a {
-  color: rgba(#000, 0.7);
+  .application {
+    input, button {
+      border: 1px solid #000;
+      padding: 10px;
+      background: transparent;
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+      @media (max-width: $breakpoint_sm) {
+        padding: 5px;
+      }
+    }
+
+    input {
+      @media (max-width: $breakpoint_sm) {
+        width: 190px;
+      }
+    }
+
+    button {
+      padding-left: 20px;
+      padding-right: 20px;
+      background: #000;
+      color: #fff;
+    }
   }
-}
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+  header {
+    text-align: center;
+    background-image: url(image_path('header-bg.jpg'));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin: 0 0 $body-gutter;
+    position: relative;
+
+    @media (max-width: $breakpoint_sm) {
+      padding: 20px 0;
+      margin: 0 0 30px;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 4.2rem;
+
+      @media (max-width: $breakpoint_sm) {
+        font-size: 2.5rem;
+      }
+    }
+
+    #introduction {
+      font-size: 2rem;
+      margin: 20px auto 50px;
+
+      @media (max-width: $breakpoint_sm) {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+      }
+    }
+
+    .credit {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      color: #656565;
+
+      @media (max-width: $breakpoint_sm) {
+        position: initial;
+        color: #b0b0b0;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  #sections {
+    text-align: center;
+
+    section {
+      margin: 0 0 $body-gutter;
+      padding: 0 0 $body-gutter;
+      border-bottom: 1px solid #ccc;
+
+      &.why {
+        $padding: 15px;
+
+        h2 {
+          margin: 0 0 (60px - $padding);
+        }
+
+        i {
+          margin: $padding $padding 0 0;
+          font-size: 1.5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &.what {
+        img {
+          box-shadow: 1px 1px 6px #aaa;
+          margin: 0 0 15px;
+        }
+      }
+
+      &.last-child {
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+      }
+
+      @media (max-width: $breakpoint_sm) {
+        margin: 0 0 $body-gutter / 2.5;
+        padding: 0 0 $body-gutter / 2.5;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 0 0 60px;
+
+      @media (max-width: $breakpoint_sm) {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+      }
+
+      .subtitle {
+        display: block;
+        margin: 0 0 10px;
+      }
+
+      .title {
+        font-size: 1.3rem;
+        color: #888;
+
+        @media (max-width: $breakpoint_sm) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 0 0 20px;
+
+      @media (max-width: $breakpoint_sm) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .feature {
+      @media (max-width: $breakpoint_sm) {
+        margin-bottom: 30px;
+
+        &.last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .pricing {
+      table {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.2rem;
+      }
+
+      i {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin: 0;
+
+        .price {
+          font-size: 2rem;
+        }
+      }
+
+      tr:nth-child(1) td {
+      }
+
+      td {
+        vertical-align: middle;
+        padding: 15px;
+
+        @media (min-width: $breakpoint_sm + 1) {
+          //padding-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin: $body-gutter 0 0;
+    padding: $body-gutter 0;
+    background: #eee;
+
+    @media (max-width: $breakpoint_sm) {
+      margin: 20px 0 0;
+      padding: 20px 0;
+    }
+
+    img {
+			display: inline-block;
+			margin: 0 20px 0 0px;
+			float: left;
+
+      @media (max-width: $breakpoint_sm) {
+        margin: 0 10px 0 0;
+        width: 100px;
+      }
+		}
+
+    .copyright {
+      color: #888;
+
+      @media (max-width: $breakpoint_sm) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .application {
+      float: right;
+    }
+  }
 }
