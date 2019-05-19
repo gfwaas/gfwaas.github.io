@@ -3,39 +3,39 @@ title: GFWaaS - GFW as a Service
 ---
 ruby:
   services = [
-    {name: 'AWS', color: '#F0931C', icon: 'fab fa-aws', text: 'Partially blocked so anything built on top of AWS might also be blocked. Even if not blocked, AWS in China is slow.'},
-    {name: 'Digital Ocean', color: '#007CF7', icon: 'fab fa-digital-ocean', text: 'Fully blocked.'},
-    {name: 'Dropbox', color: '#005EF7', icon: 'fab fa-dropbox', text: 'Fully blocked.'},
-    {name: 'Instagram', color: '#B92C8D', icon: 'fab fa-instagram', text: 'Fully blocked.'},
-    {name: 'Twitter', color: '#1DA1F2', icon: 'fab fa-twitter', text: 'Fully blocked.'},
-    {name: 'Google Play', color: '#00D1F7', icon: 'fab fa-google-play', text: 'Fully blocked.'},
-    {name: 'Behance', color: '#1A70E1', icon: 'fab fa-behance', text: 'Fully blocked.'},
-    {name: 'Reddit', color: '#F74300', icon: 'fab fa-reddit-square', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'Medium', color: 'black', icon: 'fab fa-medium', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'Facebook', color: '#4064AC', icon: 'fab fa-facebook-square', text: 'Fully blocked.'},
-    {name: 'Flickr', color: '#F70080', icon: 'fab fa-flickr', text: 'Fully blocked.'},
-    {name: 'Google Drive', color: '#F7CA4A', icon: 'fab fa-google-drive', text: 'Fully blocked.'},
-    {name: 'Blogger', color: '#F65421', icon: 'fab fa-blogger', text: 'Fully blocked.'},
-    {name: 'Google Chrome/Chrome OS', color: '#149B5A', icon: 'fab fa-chrome', text: "Google is fully blocked so no browser extensions can be downloaded or updated. System activation and update for Chrome OS won't work as well."},
-    {name: 'CodePen', color: 'black', icon: 'fab fa-codepen', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'jsFiddle', color: '#46769F', icon: 'fab fa-jsfiddle', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'SlideShare', color: '#EF8F1C', icon: 'fab fa-slideshare', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'Soundcloud', color: '#F77D33', icon: 'fab fa-soundcloud', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'Telegram', color: '#289CCE', icon: 'fab fa-telegram', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'WhatsApp', color: '#30EA66', icon: 'fab fa-whatsapp', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'Wikipedia', color: 'black', icon: 'fab fa-wikipedia-w', text: 'Fully blocked. So is jsFiddle.'},
-    {name: 'WordPress', color: '#207196', icon: 'fab fa-wordpress', text: 'Fully blocked. So is jsFiddle.'}
+    {name: 'AWS', color: '#F0931C', icon: 'fab fa-aws'},
+    {name: 'Digital Ocean', color: '#007CF7', icon: 'fab fa-digital-ocean'},
+    {name: 'Dropbox', color: '#005EF7', icon: 'fab fa-dropbox'},
+    {name: 'Instagram', color: '#B92C8D', icon: 'fab fa-instagram'},
+    {name: 'Twitter', color: '#1DA1F2', icon: 'fab fa-twitter'},
+    {name: 'Google Play', color: '#00D1F7', icon: 'fab fa-google-play'},
+    {name: 'Behance', color: '#1A70E1', icon: 'fab fa-behance'},
+    {name: 'Reddit', color: '#F74300', icon: 'fab fa-reddit-square'},
+    {name: 'Medium', color: 'black', icon: 'fab fa-medium'},
+    {name: 'Facebook', color: '#4064AC', icon: 'fab fa-facebook-square'},
+    {name: 'Flickr', color: '#F70080', icon: 'fab fa-flickr'},
+    {name: 'Google Drive', color: '#F7CA4A', icon: 'fab fa-google-drive'},
+    {name: 'Blogger', color: '#F65421', icon: 'fab fa-blogger'},
+    {name: 'Google Chrome/Chrome OS', color: '#149B5A', icon: 'fab fa-chrome'},
+    {name: 'CodePen', color: 'black', icon: 'fab fa-codepen'},
+    {name: 'jsFiddle', color: '#46769F', icon: 'fab fa-jsfiddle'},
+    {name: 'SlideShare', color: '#EF8F1C', icon: 'fab fa-slideshare'},
+    {name: 'Soundcloud', color: '#F77D33', icon: 'fab fa-soundcloud'},
+    {name: 'Telegram', color: '#289CCE', icon: 'fab fa-telegram'},
+    {name: 'WhatsApp', color: '#30EA66', icon: 'fab fa-whatsapp'},
+    {name: 'Wikipedia', color: 'black', icon: 'fab fa-wikipedia-w'},
+    {name: 'WordPress', color: '#207196', icon: 'fab fa-wordpress'}
   ]
 
   features = [
-    {icon: 'fab fa-firefox', image: {id: 'vnc', alt: ''}, title: 'Browser VNC', description: 'Log in to a Linux desktop (Xfce) running in China from nothing but your browser, then use your website from a Chinese user point of view.'},
-    {icon: 'fas fa-tachometer-alt', image: {id: 'har', alt: ''}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and give you <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>. You can import the logs in your browser and inspect detailed frontend performance data.'},
-    {icon: 'fas fa-film', image: {id: 'screencasts', alt: ''}, title: 'Screencasts', description: "Besides HAR logs, GFWaaS can also record and show the loading process, if you don't want to use VNC."}
+    {icon: 'fab fa-firefox', image: {id: :vnc, alt: 'Test your website on a server in China, with a browser-based VNC.'}, title: 'Browser VNC', description: 'Log in to a Linux desktop (Xfce) running in China from nothing but your browser. Test your website from a Chinese user point of view.'},
+    {icon: 'fas fa-tachometer-alt', image: {id: :har, alt: 'Examine frontend performance of your website by importing HAR logs directly in your browser.'}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and generate <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>, which can be imported in your browser to inspect detailed frontend performance.'},
+    {icon: 'fas fa-film', image: {id: :screencasts, alt: 'Watch how your website loads in a screencast recorded on a server in China.'}, title: 'Screencasts', description: "GFWaaS can also record how your website loads in a browser running in China, turn it into a screencast so you can watch and share with your team."}
   ]
 
 header
   .container
-    h1 GFWaaS - GFW as a Service
+    h1= current_page.data.title
     #introduction Do you know your websites may be awfully slow or don't even load in China? GFWaaS helps you test your websites performance and identify the bottleneck.
     = partial 'form'
     .credit Photo by <a href="https://www.flickr.com/photos/jcb2u/1174985565/">jcb2u</a>. Modified under <a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY-ND 2.0</a>.
@@ -46,7 +46,7 @@ header
         .col-md-10.col-lg-10
           h2
             span.subtitle Why & What does it mean?
-            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless potilical and technological resitrctions, make everything from outside of China awfully slow or unreachable. <br />For example, anything built on top of these, or use their service, could be blocked or slow in China:
+            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless potilical and technological resitrctions, makes everything from outside of China awfully slow or unreachable. <br />For example, anything built on top of the following services could be blocked or slow in China:
           - services.each do |s|
             <i class="#{s[:icon]}" title="#{s[:name]}" style="color: #{s[:color]}"></i>
     section.what
@@ -123,7 +123,7 @@ footer
   .container
     .row
       .col-md
-        = image_tag 'me.jpg'
+        = image_tag 'me.jpg', srcset: "me.jpg 1x, me@2x.jpg 2x"
         p <strong>Ding Yu</strong> - VP of Product & Engineering at Japanfoodie. Long time designer and web developer. Pink Floyd and Murakami Haruki diehard. Find me on <a href="https://dingyu.me">my homepage</a>, <a href="mailto:fe">Email</a>, <a href="https://twitter.com/felixding_">Twitter</a> and <a href="https://instagram.com/felixding">Instagram</a>.
         .copyright © 2019. Special thanks to Li, the woman I love.
       .col-md
