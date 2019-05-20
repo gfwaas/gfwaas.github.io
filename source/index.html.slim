@@ -28,15 +28,15 @@ ruby:
   ]
 
   features = [
-    {icon: 'fab fa-firefox', image: {id: :vnc, alt: 'Test your website on a server in China, with a browser-based VNC.'}, title: 'Browser VNC', description: 'Log in to a Linux desktop (Xfce) running in China from nothing but your browser. Test your website from a Chinese user point of view.'},
-    {icon: 'fas fa-tachometer-alt', image: {id: :har, alt: 'Examine frontend performance of your website by importing HAR logs directly in your browser.'}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and generate <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>, which can be imported in your browser to inspect detailed frontend performance.'},
-    {icon: 'fas fa-film', image: {id: :screencasts, alt: 'Watch how your website loads in a screencast recorded on a server in China.'}, title: 'Screencasts', description: "GFWaaS can also record how your website loads in a browser running in China, turn it into a screencast so you can watch and share with your team."}
+    {icon: 'fab fa-firefox', image: {id: :vnc, alt: 'Test your website on a server in China, with a browser-based VNC.'}, title: 'Browser VNC', description: 'Log on to a Linux desktop (Xfce) running in China from your own browser. Test your website with a Chinese user point of view.'},
+    {icon: 'fas fa-tachometer-alt', image: {id: :har, alt: 'Examine frontend performance of your website by importing HAR logs directly in your browser.'}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and generate <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>, which can be exported to your browser so you can track detailed front-end performance.'},
+    {icon: 'fas fa-film', image: {id: :screencasts, alt: 'Watch how your website loads in a screencast recorded on a server in China.'}, title: 'Screencasts', description: "GFWaaS can also record how your website loads in a browser running in China, and turn it into a screencast so you can monitor and share with your team in real-time."}
   ]
 
 header
   .container
     h1= current_page.data.title
-    #introduction Do you know your websites may be awfully slow or don't even load in China? GFWaaS helps you test your websites performance and identify the bottleneck.
+    #introduction Do you know your websites could become awfully slow or don't even load in China? GFWaaS helps you test the performance and identify the underlying bottlenecks.
     = partial 'form'
     .credit Photo by <a href="https://www.flickr.com/photos/jcb2u/1174985565/">jcb2u</a>. Modified under <a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY-ND 2.0</a>.
 .container
@@ -46,7 +46,7 @@ header
         .col-md-10.col-lg-10
           h2
             span.subtitle Why & What does it mean?
-            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless potilical and technological resitrctions, makes everything from outside of China awfully slow or unreachable. <br />For example, anything built on top of the following services could be blocked or slow in China:
+            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless political and technological restrictions, often makes websites outside of China awfully slow to load or even inaccessible. <br />For example, websites built on the following services could be blocked or become extremely slow to access in China.
           - services.each do |s|
             <i class="#{s[:icon]}" title="#{s[:name]}" style="color: #{s[:color]}"></i>
     section.what
@@ -66,7 +66,7 @@ header
         .col-md-10.col-lg-10
           h2
             span.subtitle Pricing & Availability?
-            span.title Currently GFWaaS is a (kinda) working prototype and needs a lot of further development. But if you do need it, checkout the pricing and leave your Email address:
+            span.title GFWaaS is still a prototype and would need further refinement before launch. But we are getting there soon! If you are interested, please leave your email contact and we will keep you updated!
       .pricing
         table.table.table-borderless.table-responsive-sm
           tbody
@@ -104,7 +104,7 @@ footer
     .row
       .col-md
         = image_tag 'me.jpg', srcset: "me.jpg 1x, me@2x.jpg 2x"
-        p <strong>Ding Yu</strong> - VP of Product & Engineering at Japanfoodie. Long time designer and web developer. Pink Floyd and Murakami Haruki diehard. Find me on <a href="https://dingyu.me">my homepage</a>, <a href="mailto:fe">Email</a>, <a href="https://twitter.com/felixding_">Twitter</a> and <a href="https://instagram.com/felixding">Instagram</a>.
+        p <strong>Ding Yu</strong> - VP of Product & Engineering at Japanfoodie. Experienced web designer and developer. Pink Floyd and Murakami Haruki diehard. Find more about me on <a href="https://dingyu.me">my homepage</a>, <a href="mailto:fe">Email</a>, <a href="https://twitter.com/felixding_">Twitter</a> and <a href="https://instagram.com/felixding">Instagram</a>.
         .copyright © 2019. Special thanks to Li, the woman I love.
       .col-md
         .d-none.d-sm-none.d-md-block.d-lg-block.d-xl-block
