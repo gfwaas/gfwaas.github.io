@@ -29,8 +29,8 @@ ruby:
 
   features = [
     {icon: 'fab fa-firefox', image: {id: :vnc, alt: 'Test your website on a server in China, with a browser-based VNC.'}, title: 'Browser VNC', description: 'Log on to a Linux desktop (Xfce) running in China from your own browser. Test your website with a Chinese user point of view.'},
-    {icon: 'fas fa-tachometer-alt', image: {id: :har, alt: 'Examine frontend performance of your website by importing HAR logs directly in your browser.'}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and generate <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>, which can be exported to your browser so you can track detailed front-end performance.'},
-    {icon: 'fas fa-film', image: {id: :screencasts, alt: 'Watch how your website loads in a screencast recorded on a server in China.'}, title: 'Screencasts', description: "GFWaaS can also record how your website loads in a browser running in China, and turn it into a screencast so you can monitor and share with your team in real-time."}
+    {icon: 'fas fa-tachometer-alt', image: {id: :har, alt: 'Examine frontend performance of your website by importing HAR logs directly in your browser.'}, title: 'HAR Logs', description: 'GFWaaS can load your website in China and generate <a href="https://en.wikipedia.org/wiki/.har">HAR logs</a>, which can be exported to your browser so you can inspect detailed performance.'},
+    {icon: 'fas fa-film', image: {id: :screencasts, alt: 'Watch how your website loads in a screencast recorded on a server in China.'}, title: 'Screencasts', description: "GFWaaS can also record how your website loads in a browser in China, and turn it into a screencast so you can monitor and share with your team."}
   ]
 
 header
@@ -46,7 +46,7 @@ header
         .col-md-10.col-lg-10
           h2
             span.subtitle Why & What does it mean?
-            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless political and technological restrictions, often makes websites outside of China awfully slow to load or even inaccessible. <br />For example, websites built on the following services could be blocked or become extremely slow to access in China.
+            span.title China's national Internet firewall, a.k.a The Great Firewall (GFW), together with countless political and technological restrictions, often makes websites outside of China awfully slow to load or even inaccessible. <br />For example, websites built on the following services could be blocked or barely usable in China.
           - services.each do |s|
             <i class="#{s[:icon]}" title="#{s[:name]}" style="color: #{s[:color]}"></i>
     section.what
@@ -54,7 +54,7 @@ header
         .col-md-10.col-lg-10
           h2
             span.subtitle Okay. What to do?
-            span.title Generally, you either figure out a way to host your website in China (a lot of paperwork) or optimize your website for China. Whichever way you go, you always need to test. That's where GFWaaS comes in.
+            span.title Generally, you either figure out a way to host your website in China (a lot of paperwork) or optimize your website for China. Whichever way you choose, you always need to test your website for optimal user experience in China. That's where GFWaaS can help.
       .row
         - features.each do |f|
           .col-md.feature class="#{'last-child' if f == features.last}"
