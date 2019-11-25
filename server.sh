@@ -1,3 +1,3 @@
 #!/bin/sh
 
-middleman server
+middleman server -p 10086
